@@ -1,6 +1,6 @@
 :root {
     --background: #F0F2F5;
-    --red: #E62E4D;
+    --red: #fd002a;
     --blue: #5429CC;
     --green: #33CC95;
     --blue-light: #6933FF;
@@ -15,6 +15,7 @@
 }
 body {
     background-color: var(--background);
+    font: 16px "Poppins", Arial, sans-serif;
 }
 
 button {
@@ -25,13 +26,14 @@ ul {
     list-style: none;
 }
 
+
 .header {
     background-color: var(--shape);
 }
 
-container {
+.container {
     max-width: 1120px;
-
+    margin: 0 auto;
 }
 
 .header header {
@@ -41,23 +43,52 @@ container {
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
+
 
 .header header img {
     max-width: 80px;
 }
-
 section.criatask {
     background-color: var(--blue);
     border-radius: 1rem;
-    margin-top: 5rem;
+    margin-top: -5rem;
     padding: 5rem 4rem;
-    
 }
-
 section.criatask header {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+}
+
+section.criatask h1 {
+    color: var(--background);
+    font-size: 2.25rem;
+}
+
+section.criatask .input-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+section.criatask .input-group input {
+    background-color: var(--shape);
+    color: var(--text-body);
+    font-family: "Poppins";
+    font-weight: 500;
+    padding: 0.5rem;
+    border: 0;
+    border-radius: 0.25rem;
+}
+
+section.criatask .input-group button {
+    color: var(--shape);
+    background-color: var(--green);
+    border: 0;
+    padding: 0.65rem;
+    border-radius: 0.25rem;
+    font-weight: 600;
 }
