@@ -21,8 +21,8 @@
             <header>
                 <h1>Minhas Tasks</h1>
                 <div class="input-group">
-                    <input type="text" placeholder="Adicionar uma nova task" id="Novatask">
-                    <button onclick=getValueInput()>
+                    <input type="text" placeholder="Adicionar uma nova task" id="novatask">
+                    <button onclick="getValueInput()">
                         enviar
                     </button>
                 </div>
@@ -35,9 +35,10 @@
     </div>
 </body>
 <script>
+    
     function getValueInput() {
-        let input = document.querySelector('#NovaTask').value
-        console.log(input)       
+        let input = document.getElementById('novatask').value;
+        console.log(input);      
     }
     
 
